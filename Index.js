@@ -81,7 +81,7 @@ form.addEventListener('keydown', function(event){
   }
 })
 
-form.addEventListener(submit, function(event){
+form.addEventListener("submit", function(event){
   event.preventDefault();
 
 const name = document.getElementById('name').value;

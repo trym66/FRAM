@@ -285,6 +285,7 @@ iframe {
 footer{
     background-color: #DC4131;
     color: white;
+    overflow: hidden;
    }
 
    footer h1{
@@ -308,12 +309,14 @@ footer{
     padding-bottom: 15px;
    }
 
-
-
-   .footer-divider{
+  .footer-divider{
     color: white;
     border: 1px solid white;
     margin-left: 28px;
+   }
+
+   .footer-extender{
+    margin-bottom: 93px;
    }
 
    @media (max-width: 720px){
@@ -342,17 +345,18 @@ footer{
     margin-left: 57px;
     width: 20%;
     position: relative;
+    margin-bottom: 93px;
    }
 
    form button{
-    width: 10%;
-    height: 30px;
+    width: 0.875em;
+    height: 1m;
     margin: 5px 0;
     background-color: white;
     border: none;
     position: absolute;
-    right: 1px;
-    top: 1px;
+    right: 1em;
+    top: 3.8em;
    }
 
    form input{
@@ -361,11 +365,18 @@ footer{
     margin: 6px 0;
     border-radius: 4px;
     border: none;
+    text-align: left;
+    box-sizing: border-box;
+    text-indent: 20px;
+   }
+
+   form input:focus{
+    outline: 2px solid;
    }
 
   form input::placeholder {
     font-size: 1em;
-    padding-left: 16px;
+    text-indent: 20px;
   }
 
    @media (max-width: 720px){
