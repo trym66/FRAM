@@ -1,0 +1,592 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arimo, sans-serif
+}
+
+body{
+    overflow: auto;
+}
+
+
+.img-container {
+    position: relative;
+    height: 100vh; /* Full skjermhøyde */
+    background: url('/images/Homepage_background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-overlay {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .img-container h1 {
+    font-size: 200px;
+    font-weight: lighter;
+    margin-bottom: 250px;
+  }
+
+  .img-overlay p {
+    font-size: 36px;
+    margin-bottom: 10px;
+    width: 419px;
+    text-transform: uppercase;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 208px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 250px;
+    margin: 10px auto;
+    background-color: white;
+  }
+
+  @media (max-width: 720px){
+.img-container h1{
+    font-size: 75px;
+    margin-top: -200px;
+}
+
+.img-container p{
+    font-size: 24px;
+    width: 260px;
+    position: absolute;
+    transform: translateY(220px);
+}
+
+.divider{
+    position: absolute;
+    transform: translateY(9%);
+    height: 300px;
+}  
+  }
+  
+  
+
+  /*=================
+  ===================
+    Landing page
+   ==================
+   ==================*/ 
+   
+
+.landing-page{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card{
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 2.25em;
+    margin-top: 90px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.card p{
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: Frank Ruhl Libre, light;
+}
+
+.card img{
+    width: 448px;
+    height: 327px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.line-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card span{
+    display: block;
+}
+
+.card button{
+    width: 320px;
+    height: 45px;
+    background-color: #DC4131;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 90px;
+    margin-top: 45px;
+    border-radius: 8px ;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: #AE2E21;
+}
+
+.vertical-line{
+    border-left: 1px solid;
+    height: auto;
+}
+
+
+@media (max-width: 720px){
+    .landing-page {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .card img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card p{
+        font-size: 16px;
+    }
+
+    .card h2{
+        font-size: 24px;
+    }
+}
+
+/* ===============================
+==================================
+KALONNE REKKE MED INFO
+==================================
+==================================
+ */
+
+ .right-column{
+    display: flex;
+    flex: 1;    /* vet ikke om jeg trenger denne */
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 1px solid;
+    height: 100%;
+ }
+
+.left-column{
+    display: flex;
+    flex: 1;
+    max-width: 20%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.left-column h1{
+    font-size: 36px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.column{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid;
+    padding: 57px 0;
+}
+
+.column p{
+    font-size: 16px;
+    font-family: Arimo, sans-serif;
+    width: 35%;
+    display: flex;
+    margin-right: 180px;
+
+}
+
+.column h3{
+    font-size: 20px;
+    font-family: Arimo, sans-serif;
+    padding-left: 90px;
+}
+
+.columns{
+    border-top: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #F7F2DE;
+    border-bottom: 1px solid;
+}
+
+@media (max-width: 720px){
+    .left-column,
+    .right-column {
+        flex: 1;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .column p {
+        width: 100%;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .columns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .column{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    text-align: left;
+   }
+
+   .right-column h3{
+    font-size: 1.125em;
+    display: flex;
+    align-items: center;
+    margin-right: 185px;
+    margin-bottom: 40px;
+    width: 300px;
+   }
+
+   .right-column p{
+    font-size: 1em;
+    width: 300px;
+   }
+
+   .left-column h1{
+    font-size: 1.5em;
+
+   }
+
+   .right-column{
+    border-left: none;
+   }
+
+}
+
+/*====================
+======================
+Popular Produce
+======================
+======================
+ */
+
+.popular-produce h1{
+    margin-top: 90px;
+    margin-left: 45px;
+    margin-bottom: 45px;
+    font-size: 36px;
+}
+
+.popular-produce-image-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 29px;
+    padding-left: 45px;
+    /* position: relative; */
+}
+
+.popular-produce-image-grid img{
+    border-radius: 16px;
+    width: 28.375em;
+    height: 27em;
+    border-bottom: 20px;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.popular-produce-image-grid figure {
+    position: relative;
+    display: inline;
+    margin: 0;
+}
+
+.popular-produce-image-grid figcaption {
+    /* font-size: 0.9em; */
+    color: #1B1A1E;
+    position: relative;
+    display: inline;
+    bottom: 0; 
+    width: 50%; 
+    padding-top: 10px;
+}
+
+.popular-produce-image-grid figcaption.left {
+    left: 0; /* Plasserer venstre tekst helt til venstre */
+    text-align: left;
+    font-size: 1.5em;
+    display: inline-flex;
+    margin-right: 110px;
+    margin-bottom: 12px;
+}
+
+.popular-produce-image-grid figcaption.right {
+    font-size: 1.5em;
+}
+
+.popular-produce-image-grid figcaption.under{
+    font-size: 1em;
+}
+
+.popular-produce-image-grid .add-to-cart{
+    position: absolute;
+    top: 75%;
+    left: 59%;
+    border-radius: 44px;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 38px;
+    width: 152px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+/* ===========================
+==============================
+   FOOTER
+==============================
+==============================
+ */
+
+   footer{
+    background-color: #DC4131;
+    color: white;
+    margin-top: 90px;
+   }
+
+   footer h1{
+    font-size: 48px;
+    margin-left: 45px;
+    padding-top: 30px;
+   }
+
+   footer h2{
+    font-size: 36px;
+    /* padding: 20px 40px; */
+    margin-left: 57px;
+    margin-top: 40px;
+   }
+
+   footer p{
+    font-size: 20px;
+    margin-left: 54px;
+    margin-top: 26px;
+    width: 407px;
+    padding-bottom: 15px;
+   }
+
+
+    
+
+   .footer-divider{
+    color: white;
+    border: 1px solid white;
+    margin-left: 28px;
+   }
+
+   @media (max-width: 720px){
+    footer p{
+        width: 279px;
+        font-size: 1em;
+        margin-left: 29px;
+    }
+
+    footer h1{
+        font-size: 3em;
+        margin-left: 29px;
+    }
+
+    footer h2{
+        font-size: 1.5em;
+        margin-left: 32px;
+    }
+   }
+
+/* ==================
+   FORM
+ ==================*/
+
+   form{
+    margin-left: 57px;
+    width: 20%;
+    position: relative;
+   }
+
+   form button{
+    border-radius: 8px;
+    color: black;
+    margin-top: 12px;
+    margin-bottom: 93px;
+    width: 100%;
+    height: 44px;
+    background-color: #E1EAF0;
+    font-size: 1em;
+    border: none; 
+    cursor: pointer;
+   }
+
+   form input{
+    width: 100%;
+    height: 30px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+   }
+
+  form input::placeholder {
+    font-size: 1em;
+    padding-left: 16px;
+  }
+
+  @media (max-width: 720px){
+    form {
+        width: 329px;
+        margin-left: 29px;
+    }
+ 
+    form button{
+        margin-bottom: 62px;
+    }
+
+    form input::placeholder{
+        padding-left: 10px;
+    }
+    
+  }
+  
+
+
+  /* ===========================
+================================
+    @MEDIA QUERIES
+================================
+================================   
+   */
+
+
+
+  
+   
+
+   
+
+   /* =========
+   startside
+   ============= */
+
+  
+
+   .vertical-line{
+    border-top: 1px solid;
+   }
+   .left-column h1{
+    padding-top: 120px;
+    border-bottom: 1px solid;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+   }
+
+  
+
+
+
+
+@media (max-width: 720px){
+    .popular-produce-image-grid{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 32px;
+    }
+
+    .popular-produce{
+        width: 100%;
+        position: relative;
+    }
+
+    .popular-produce-image-grid img{
+        /* min-width: 100%; Bildene tar hele bredden av skjermen */
+        width: 250px;
+        height: 321px;
+        scroll-snap-align: center; 
+        cursor: none;
+        object-fit: cover;
+    }
+
+    .popular-produce h1{
+        font-size: 1.5em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .add-to-cart {
+        position: absolute; /* Fortsatt absolutt posisjonering */
+        transform: translateX(-250px);
+        transform: translateY(-220px);
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 100px 20px;
+    }
+
+
+
+    .popular-produce-image-grid figure {
+        position: relative; /* Sørger for at knappen kan plasseres relativt til figuren */
+        width: 250px;
+        height: 641px;
+    }
+
+}
+
+
+
+
+

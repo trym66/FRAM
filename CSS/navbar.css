@@ -1,0 +1,138 @@
+/* =================
+====================
+    NAVBAR
+====================
+==================== */
+
+
+
+.navbar{
+    background-color: #F7F2DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.navbar h3{
+    font-family: Frank Ruhl Libre, sans-serif;
+    font-size: 32px;
+    font-weight: lighter;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar img{
+    transition: 0.3s;
+    width: 21px;
+    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.navbar img:hover{
+    opacity: 40%;
+    transition: 0.3s;
+}
+
+
+.sidenav-top{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: -30px;
+}
+
+.sidenav-top h3{
+  font-family: 'Frank Ruhl Libre' sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#sidenav-divider{
+  border-bottom: 1px solid;
+  width: 100%;
+}
+
+.sidenav{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #008f51;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    font-size: 36px;
+}
+
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    font-size: 36px;
+  
+  }
+  
+  .sidenav .closebtn:hover{
+      text-decoration: none;
+    }
+
+#checkout{
+   margin-top: 100%;
+}
+
+#products{
+    margin-top: 150px;
+}
+
+  .cart-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 36px;
+    background-color: #28BD6D;
+    border-radius: 50px;
+    margin-right: 32px;
+    font-size: 14px;
+}
+
+.cart-count{
+    display: inline-block;
+}
+
+
+ @media screen and (max-width: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {
+      font-size: 24px;
+    }
+   
+  }

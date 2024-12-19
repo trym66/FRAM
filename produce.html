@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAM Home Delivery Service For Localy Food</title>
+    <link rel="stylesheet" href="CSS/produce.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" aria-label="Open navigation menu">
+                <img src="images/menu-bar.svg" alt="Menu bar icon" onclick="openNav()">
+            </a>
+            <h3>FRAM</h3>
+
+            <div class="cart-container">
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+
+        <nav class="sidenav" id="mySidenav" aria-label="Navigation menu">
+            <div class="sidenav-top">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           
+                <h3>FRAM</h3>
+               
+            </div>
+            <div id="sidenav-divider"></div>
+            <a href="index.html" id="products">Home</a>
+            <a href="#">CHAT</a>
+            <a href="#" id="checkout">CHECKOUT</a>
+        </nav>
+    </header>
+
+    <main>
+
+    <section class="produce">
+        <h1>Produce</h1>
+        <p>Explore our selection of seasonal produce, sourced direxctly from Local
+            farms to ensure peak freshness and quality. Every item is chosen with
+            care, supporting sustainable practices and bringing the best of the harvest to your table
+        </p>
+</section>
+  
+        <section class="popular-produce">
+            <!-- <h1>POPULAR PRODUCE</h1> -->
+            <div class="produce-image-grid">
+                <figure>
+                    <img src="/images/product-page/oats.jpg" alt="Oats">
+                    <figcaption class="left">Oats</figcaption>
+                    <figcaption class="right">16 kr / kg</figcaption> <br>
+                    <figcaption class="under">1 kg</figcaption>
+                    <button class="add-to-cart">Add to basket &uarr;</button>
+                </figure>
+
+                <figure>
+                    <img src="/images/product-page/red-onions.jpg" alt="Red Onions">
+                    <figcaption class="left">Red onions</figcaption>
+                    <figcaption class="right">45 kr / kg</figcaption> <br>
+                    <figcaption class="under">0.5 kg</figcaption>
+                    <button class="add-to-cart">Add to basket &uarr;</button>
+                </figure>
+
+                <figure>
+                    <img src="images/product-page/garlic.jpg" alt="Garlic">
+                    <figcaption class="left">Garlic</figcaption>
+                    <figcaption class="right">38 kr / kg</figcaption> <br>
+                    <figcaption class="under">0.2 kg</figcaption>
+                    <button class="add-to-cart">Add to basket &uarr;</button>
+                </figure>
+
+                <figure>
+                    <img src="/images/product-page/potatos.jpg" alt="potatos">
+                    <figcaption class="left">Potatos</figcaption>
+                    <figcaption class="right">32 kr / kg</figcaption> <br>
+                    <figcaption class="under">1 kg</figcaption>
+                    <button class="add-to-cart">Add to basket &uarr;</button>
+                </figure>
+
+                <figure>
+                    <img src="/images/product-page/carrots.jpg" alt="carrots">
+                    <figcaption class="left">Carrots</figcaption>
+                    <figcaption class="right">48 kr / kg</figcaption> <br>
+                    <figcaption class="under">1 kg</figcaption>
+                    <button class="add-to-cart">Add to basket &uarr;</button>
+                </figure>
+            </div>
+        </section>
+
+            <section class="map-layout">
+<div class="left-column">
+   <h1> SEE OUR PARTNERING FARMS</h1>
+   <!-- <div class="map-divider"></div> -->
+    <!-- left column -->
+</div> 
+
+
+<div class="right-column">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41531.95943279336!2d10.635460006246054!3d60.307781764215505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641a30c3bfd7b6d%3A0x41858bb05b2cd7e3!2sOppdalslinna%20242%2C%202740%20Roa!5e0!3m2!1sno!2sno!4v1734359801389!5m2!1sno!2sno"
+     width="750" height="478" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- right column -->
+</div>
+</section>
+   <!-- content -->
+
+      <footer>
+        <h1>FRAM</h1>
+        <div class="footer-divider"></div>
+        <h2>STAY UPDATED</h2>
+        <p>Sign up for our newsletter to be the first to know about new produce or other exciting news!</p>
+
+
+        <form id="userForm" action="https://formspree.io/f/xzzbqngz" method="post">
+            <input type="text" name="name" placeholder="First name" id="name">
+            <input type="email" name="email" placeholder="E-mail address" id="email" required>
+            <button type="submit">&#10140;</button>
+        </form>
+    </footer>
+            
+        </main>
+        <script src="Index.js"></script>
+</body>
+</html>
+
