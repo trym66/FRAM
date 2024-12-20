@@ -9,6 +9,7 @@ body, html{
     /* font-family: Frank Ruhl Libre; */
     font-family: Arimo, sans-serif;
     background-color: #F7F2DE;
+    scroll-behavior: smooth;
 
 }
 
@@ -48,7 +49,6 @@ body, html{
   .produce-image-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 25px;
     width: 100%;
     max-width: 90%;
     margin: auto;
@@ -135,7 +135,6 @@ button.add-to-cart:hover {
 .produce-image-grid img{
   width: 345px;
   height: 279px;
-  
 } 
 
 .produce-image-grid figcaption{
@@ -305,8 +304,8 @@ footer{
     font-size: 20px;
     margin-left: 54px;
     margin-top: 26px;
-    width: 24%;
-    padding-bottom: 15px;
+    width: 23%;
+    padding-bottom: 17px;
    }
 
   .footer-divider{
