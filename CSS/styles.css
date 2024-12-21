@@ -290,6 +290,7 @@ KALONNE REKKE MED INFO
 
    .left-column h1{
     font-size: 1.5em;
+    border-bottom: 1px solid;
 
    }
 
@@ -315,10 +316,12 @@ Popular Produce
 
 .popular-produce-image-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 29px;
     position: relative;
     width: 95%;
+    max-width: 100%;
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -352,7 +355,7 @@ Popular Produce
 }
 
 .popular-produce-image-grid figcaption.left {
-    left: 0; /* Plasserer venstre tekst helt til venstre */
+    left: 0;
     text-align: left;
     font-size: 1.5em;
     display: inline-flex;
@@ -370,17 +373,18 @@ Popular Produce
 
 .popular-produce-image-grid .add-to-cart{
     position: absolute;
+    display: block;
     bottom: 17%;
-    left: 65%;
-    transform: translateX(10%);
-    border-radius: 44px;
+    left: 50%;
+    transform: translateX(40%);
     padding: 10px 15px;
     text-align: center;
     background-color: black;
     color: white;
-    height: 38px;
-    width: 152px;
+    /* height: 38px; */
+    width: 9.5em;
     border: none;
+    border-radius: 2.75em;
     font-size: 1em;
     cursor: pointer;
 }
@@ -527,7 +531,7 @@ Popular Produce
    }
    .left-column h1{
     padding-top: 120px;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -545,7 +549,8 @@ Popular Produce
         flex-wrap: nowrap;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        gap: 32px;
+        gap: 32px; 
+         
     }
 
     .popular-produce{
@@ -573,20 +578,21 @@ Popular Produce
 
     .popular-produce-image-grid .add-to-cart {
         position: absolute; /* Fortsatt absolutt posisjonering */
+        left: 10%;
+        bottom: 8.75em;
         width: 9.5em;
-        height: 2.5em;
+        /* height: 2.5em; */
         color: white;
         border: none;
-        border-radius: 5px;
-        display: flex;
+        border-radius: 2.75em;
+
     }
 
 
 
     .popular-produce-image-grid figure {
         position: relative; /* Sørger for at knappen kan plasseres relativt til figuren */
-        width: 250px;
-        height: 641px;
+        
     }
 
 }
