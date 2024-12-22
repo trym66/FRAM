@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+}
+
+
 
 body, html{
     font-family: Arimo, sans-serif;
@@ -34,20 +39,20 @@ body, html{
     align-items: center;
 }
 
-.navbar img{
+.navbar button{
   transition: 0.3s;
   width: 1.3125em;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  cursor: pointer;
   border: none;
 }
 
-.navbar img:hover{
+.navbar button:hover{
   opacity: 40%;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .navbar button{
@@ -121,6 +126,7 @@ body, html{
     top: 6px;
     left: 0;
     font-size: 36px;
+    cursor: pointer;
   }
   
   .sidenav .closebtn:hover{
@@ -145,6 +151,7 @@ body, html{
     border-radius: 50px;
     margin-right: 32px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .cart-count{

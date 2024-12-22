@@ -14,6 +14,9 @@ function openNav() {
     sidenav.style.width = "400px";
     body.style.overflow = "hidden";
    }
+
+   document.querySelector('button').setAttribute('aria-expanded', 'true');
+
   }
   
   
@@ -24,6 +27,7 @@ function openNav() {
     sidenav.style.width = "0";
     body.style.overflow = "auto"; 
 
+    document.querySelector('button').setAttribute('aria-expanded', 'false');
   }
 
 //////////////////
@@ -82,7 +86,7 @@ form.addEventListener('keydown', function(event){
 })
 
 form.addEventListener("submit", function(event){
-  event.preventDefault();
+  // event.preventDefault();
 
 const name = document.getElementById('name').value;
 const email = document.getElementById('email').value;
@@ -96,7 +100,7 @@ if (!isValidEmail(emailInputValue)){
 else {
   emailInput.style.border = ''; 
   alert('Skjemaet er sendt!');
-  form.reset(); // Tømmer skjemaet for input
+  form.sumbit(); // Tømmer skjemaet for input
 }
 
 

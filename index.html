@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head role="banner">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FRAM - Hjemlevering av lokal mat fra gårder i ditt nærområde. En sirkulær tjeneste som støtter lokal bærekraft.">
+    <meta name="keywords" content="lokal mat, hjemlevering, bærekraft, gårdsprodukter, FRAM">
+    <meta name="language" content="en">
+    <meta name="geo.region" content="NO">
+    <meta name="geo.placename" content="Norway">
+
+    <link rel="icon" href="logo.png" type="image/png" id="favicon">
+
     <title>FRAM Home Delivery Service For Local Food</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/navbar.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
@@ -13,12 +25,16 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <button aria-label="Open navigation menu">
-                <img src="images/menu-bar.svg" alt="Menu bar icon" onclick="openNav()">
+    <header role="heading">
+        <!-- Main Navigation -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <button
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                onclick="openNav()">
+                <img src="images/menu-bar.svg" alt="Menu bar icon">
             </button>
-            <!-- Heading -->
+
             <h3>FRAM</h3>
 
             <!-- Handlevogn -->
@@ -28,8 +44,13 @@
         </nav>
 
         <!-- Sidenavigasjon -->
-        <nav class="sidenav" id="mySidenav" aria-label="Navigation menu">
-            <button class="closebtn" onclick="closeNav()">&times;</button>
+        <nav class="sidenav" id="mySidenav" aria-label="Side navigation" hidden>
+            <button
+                class="closebtn"
+                onclick="closeNav()"
+                aria-label="Close navigation menu">
+                &times;
+            </button>
 
             <h3 id="top-nav">FRAM</h3>
             <div id="sidenav-divider"></div>
@@ -40,68 +61,79 @@
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         
-        <section class="img-container">
-            <div class="img-overlay">
-              <h1>FRAM</h1>
-              <div class="divider"></div>
-              <p>Home delivery from your local farms</p>
-            </div>
-        </section>
 
+    <section class="img-container">
+        <div class="img-overlay">
+            <h1>FRAM</h1>
+              <div class="divider"></div>
+                <p>Home delivery from your local farms</p>
+        </div>
+    </section>
+
+        <!-- Landing page -->
         <div class="landing-page">
             <section class="card">
                 <h2>SHOP OUR SEASONAL <br> SELECTION</h2>
                 <p class="subtitle">Updated every week</p>
                 <img src="images/landing-page/seasonal-selection.jpg" alt="Seasonal selection image" loading="lazy">
-                <span class="description1">New produce is added continuously as time</span>
-                <span class="description2">goes by and the seasons change.</span>
-                <button>Browse our selection</button>
+                <p class="description">
+                    New produce is added continuously as time
+                    goes by and the seasons change.
+                </p>
+                <button 
+                    aria-label="Browse our selection">
+                    Browse our selection
+                </button>
             </section>
 
             <div class="vertical-line"></div>
 
             <section class="card">
                 <h2>ASK US ABOUT <br> ANYTHING</h2>
-                <p>All your questions answered</p>
+                <p class="subtitle">All your questions answered</p>
                 <img src="images/landing-page/ask-us.jpg" alt="Ask us image" loading="lazy">
-                <span> New produce is added continuously as time</span>
-                <span> goes by and the seasons change.</span>
-                <button>Go to chat</button>
+                <p class="description">
+                     New produce is added continuously as time
+                     goes by and the seasons change.
+                </p>
+
+                <button aria-label="Go to chat">Go to chat</button>
             </section>
         </div>
 
         <div class="horizontal-line"></div>
 
-        <section class="columns">
+
+        <!-- Info med tekst i kolonner -->
+        <section class="columns" aria-labelledby="how-it-works">
             <div class="left-column">
-                <h1>THIS IS HOW IT WORKS</h1>
+                <h1 aria-label="how-it-works">THIS IS HOW IT WORKS</h1>
             </div>
 
             <div class="right-column">
-                <div class="column">
+                <article class="column">
                     <h3>ORDER GROCERIES</h3>
                     <p>Fram is a circular service that ensures your kitchen is always stocked with the essentials you need. Browse our seasonal selection, choose your items, and place your order online.</p> 
-                </div>
+                </article>
 
-                <div class="column">
+                <article class="column">
                     <h3>STOCK UP</h3>
                     <p>Once your order arrives, unpack the produce and store it however it works best for you. Hold onto the containers - they're yours to keep until your next order.</p>
-                </div>
+                </article>
 
-                <div class="column">
+                <article class="column">
                     <h3>SCAN &amp; REORDER</h3>
                     <p>Ready for a refill? Grab the containers from your last order and scan the QR code with our app or your phone's camera. This instantly adds the items back to your cart, making reordering a breeze.</p>
-                </div>
+                </article>
 
-                <div class="column">
+                <article class="column">
                     <h3>SWAP &amp; REUSE</h3>
                     <p>When we deliver your new order, simply leave your empty containers outside. We'll pick them up</p>
-                    </div>
-    </div>
-                     
-    </section>
+                </article>
+            </div>
+        </section>
 
     <!-- ==========
      Popular Produce
@@ -111,54 +143,62 @@
         <h1>POPULAR PRODUCE</h1>
         <div class="popular-produce-image-grid">
             <figure>
-                <img src="images/product-page/oats.jpg" alt="Oats">
+                <img src="images/product-page/oats.jpg" alt="Oats" loading="lazy">
                 <figcaption class="left">Oats</figcaption>
                 <figcaption class="right">16 kr / kg</figcaption> <br>
                 <figcaption class="under">1 kg</figcaption>
-                <button class="add-to-cart">Add to basket &uarr;</button>
+                <button class="add-to-cart" aria-label="Add to basket">Add to basket &uarr;</button>
             </figure>
+
             <figure>
-                <img src="images/product-page/red-onions.jpg" alt="Red Onions">
+                <img src="images/product-page/red-onions.jpg" alt="Red Onions" loading="lazy">
                 <figcaption class="left">Red Onions</figcaption>
                 <figcaption class="right">45 kr / kg</figcaption> <br>
                 <figcaption class="under">0.5 kg</figcaption>
-                <button class="add-to-cart">Add to basket &uarr;</button>
+                <button class="add-to-cart" aria-label="Add to basket">Add to basket &uarr;</button>
             </figure>
+
             <figure>
-                <img src="images/product-page/garlic.jpg" alt="Garlic">
+                <img src="images/product-page/garlic.jpg" alt="Garlic" loading="lazy">
                 <figcaption class="left">Garlic</figcaption>
                 <figcaption class="right">38 kr / kg</figcaption> <br>
                 <figcaption class="under">0.2 kg</figcaption>
-                <button class="add-to-cart">Add to basket &uarr;</button>
+                <button class="add-to-cart" aria-label="Add to basket">Add to basket &uarr;</button>
             </figure>
         </div>
-</section>
+    </section>
 </main>
-        <!-- =============
-         FOOTER========
-         ============= -->
 
-         <footer>
+
+<!-- =============
+    FOOTER========
+============= -->
+
+    <footer role="contentinfo">
         <h1>FRAM</h1>
         <div class="footer-divider"></div>
         <h2>STAY UPDATED</h2>
-        <p>Sign up for our newsletter to be the first to know about new produce or other exciting news!</p>
+        <p>
+            Sign up for our newsletter to be the first
+             to know about new produce or other exciting news!
+        </p>
 
 
-        <form action="https://formspree.io/f/xzzbqngz" method="post" id="userForm">
+        <form itemid="userForm" action="https://formspree.io/f/meoojplb" method="post" id="userForm">
             <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="First name" required autocomplete="name">
+            <input type="text" id="name" name="name" required placeholder="First name" autocomplete="name">
+
             <label for="email"></label>
-            <input type="text" id="email" name="email" placeholder="E-mail address" required autocomplete="email">
-            <button type="submit">Send</button>
+            <input type="email" id="email" name="email" required placeholder="E-mail address" autocomplete="email">
+
+            <button type="submit" aria-label="Submit the form">Submit</button>
             <!-- <span id="emailError" style="display: none; color: red;">Ugyldig email adresse</span> -->
         </form>
     </footer>
         
 
-    <script src="Index.js"></script>
+<script src="Index.js"></script>
 </body>
-
 </html>
 
     
