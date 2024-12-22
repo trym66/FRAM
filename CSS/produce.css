@@ -7,10 +7,9 @@
 
 body, html{
     /* font-family: Frank Ruhl Libre; */
-    font-family: Arimo, sans-serif;
+    font-family: 'Arimo', sans-serif;
     background-color: #F7F2DE;
     scroll-behavior: smooth;
-
 }
 
   .produce{
@@ -68,6 +67,7 @@ body, html{
     position: relative;
     display: block;
     margin: 0;
+    width: 95%;
   }
 
   .produce-image-grid figcaption {
@@ -109,9 +109,9 @@ body, html{
   cursor: pointer;
   font-size: 1em;
   width: 9.5em;
-  /* height: 38px; */
+  height: 38px;
   border-radius: 2.75em;
-  z-index: 99;
+  z-index: 999;
 }
 
 button.add-to-cart:hover {
@@ -153,7 +153,7 @@ button.add-to-cart:hover {
   
 .add-to-cart{
   position: absolute;
-  padding: 100px 20px;
+  padding: 10px 15px;
   transform: translateX(-65%);
 }
   }
@@ -198,7 +198,7 @@ button.add-to-cart:hover {
 
 
 
-   .map-layout {
+.map-layout {
     flex: 1;  
     display: flex;
     flex-direction: row;
@@ -225,9 +225,8 @@ button.add-to-cart:hover {
 }
 
 .left-column h1{
-    font-size: 36px;
-    font-family: Arimo, sans-serif;
-    font-weight: light;
+    font-size: 2.25em;
+    font-weight: lighter;
     width: 12em;
     text-align: center;
     padding: auto;
@@ -254,6 +253,11 @@ iframe {
   .right-column iframe{
     width: 100%;
   }
+
+  .right-column{
+  width: 100%;
+  }
+
   
   .map-layout{
     display: flex;
@@ -263,11 +267,24 @@ iframe {
 
   .left-column{
     border: none;
+    width: 100%;
   }
 
-  .map-layout{
-    border-top: 1px solid;
+  .left-column h1{
+    font-size: 1.5em;
+
   }
+
+ .map-layout{
+    border-top: 1px solid;
+
+  }
+
+.map-layout{
+  margin-top: 100px;
+}
+
+
 }
 
 
