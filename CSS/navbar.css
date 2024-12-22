@@ -42,7 +42,7 @@ body, html{
 .navbar button{
   transition: 0.3s;
   width: 1.3125em;
-  height: auto;
+  height: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,10 +60,16 @@ body, html{
   margin-left: 20px;
 }
 
-#sidenav-divider{
+.sidenav #sidenav-divider{
   border-bottom: 1px solid;
   width: 100%;
   margin-top: 1px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin-top: 61px;
 }
 
 .sidenav #top-nav{
@@ -84,7 +90,7 @@ body, html{
     background-color: #008f51;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,6 +105,13 @@ body, html{
     display: block;
     transition: 0.3s;
     font-size: 36px;
+}
+
+.sidenav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sidenav h3{
@@ -133,13 +146,13 @@ body, html{
       text-decoration: none;
     }
 
-#checkout{
+ #checkout{
    margin-top: 100%;
 }
 
-#products{
+ #products{
     margin-top: 150px;
-}
+} 
 
   .cart-container{
     display: flex;
@@ -159,7 +172,7 @@ body, html{
 }
 
 
- @media screen and (max-width: 450px) {
+ @media screen and (max-width: 720px) {
     .sidenav {
       padding-top: 15px;
       /* display: flex;
@@ -168,7 +181,7 @@ body, html{
       color: blue;
       
     }
-    .sidenav a {font-size: 24px;}
+    .sidenav a {font-size: 1.5em;}
     .sidenav #top-nav{
       display: none;
     }
@@ -181,7 +194,7 @@ body, html{
       margin-right: 0.3em;
     }
 
-    .navbar img{
+    .navbar button{
       margin-left: 0.3em;
     }
 

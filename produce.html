@@ -30,11 +30,14 @@
     <header>
         <!-- Main Navigation -->
         <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <button aria-label="Open navigation menu" aria-expanded="false">
-                <img src="images/menu-bar.svg" alt="Menu bar icon" onclick="openNav()">
+            <button
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                onclick="openNav()">
+                <img src="images/menu-bar.svg" alt="Menu bar icon">
             </button>
-            
-            <h3>FRAM</h3>
+
+            <h1 onclick="redirectHomePage">FRAM</h1>
 
             <!-- Handlevogn -->
             <div class="cart-container">
@@ -42,23 +45,27 @@
             </div>
         </nav>
 
-        <!-- Side Navigation -->
+        <!-- Sidenavigasjon -->
         <nav class="sidenav" id="mySidenav" aria-label="Side navigation" hidden>
             <button
-             class="closebtn"
-              onclick="closeNav()"
-               aria-label="Close navigation menu">
-               &times;
+                class="closebtn"
+                onclick="closeNav()"
+                aria-label="Close navigation menu">
+                &times;
             </button>
-            
+
             <h3 id="top-nav">FRAM</h3>
             <div id="sidenav-divider"></div>
 
-            <a href="index.html" id="products">HOME PAGE</a>
-            <a href="#">CHAT</a>
-            <a href="#" id="checkout">CHECKOUT</a>
+            <ul>
+               <li><a href="index.html" id="products">HOME PAGE</a></li>
+               <li><a href="#">CHAT</a></li>
+               <li><a href="#" id="checkout">CHECKOUT</a></li>
+            </ul>   
         </nav>
     </header>
+
+
 
 <main>
 
