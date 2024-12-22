@@ -28,7 +28,7 @@ body, html{
     border-bottom: 1px solid black;
 }
 
-.navbar h3{
+.navbar h1{
     font-family: 'Frank Ruhl Libre', sans-serif;
     font-size: 2em;
     font-weight: lighter;

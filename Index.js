@@ -30,6 +30,10 @@ function openNav() {
     document.querySelector('button').setAttribute('aria-expanded', 'false');
   }
 
+  // function redirectHomePage(){
+  //   window.location.href = "index.html";
+  // }
+
 //////////////////
 //handlevogn
 ////////////////
