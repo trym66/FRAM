@@ -4,50 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbox</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRAM Home Delivery Service For Local Food</title>
     <link rel="stylesheet" href="/CSS/Chatbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..
-    900&display=swap" rel="stylesheet">
 </head>
-    <body>
-    
-        <header>
-            <nav class="navbar">
-                <a href="#" aria-label="Open navigation menu">
-                    <img src="images/menu-bar.svg" alt="Menu bar icon" onclick="openNav()">
-                </a>
-                <h3>FRAM</h3>
-            </nav>
-    
-            <nav class="sidenav" id="mySidenav" aria-label="Navigation menu">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="produce.html" id="products">PRODUCTS</a>
-                <a href="#">CHAT</a>
-                <a href="#" id="checkout">CHECKOUT</a>
-            </nav>
-        </header>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" aria-label="Open navigation menu">
+                <img src="images/menu-bar.svg" alt="Menu bar icon" onclick="openNav()">
+            </a>
+            <h3>FRAM</h3>
+        </nav>
+        <nav class="sidenav" id="mySidenav" aria-label="Navigation menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="produce.html" id="products">PRODUCTS</a>
+            <a href="#">CHAT</a>
+            <a href="#" id="checkout">CHECKOUT</a>
+        </nav>
+    </header>
 
-        <main class="chat-container">
-            <div class="chatbox">
-                
-                <div class="chat-content" id="chatContent">
-                    <!-- Meldinger vises her -->
-                </div>
-                <div class="chat-input">
-                    <input type="text" id="chatMessage" placeholder="Skriv en melding..." />
-                    <button onclick="sendMessage()">&uarr;</button>
-                </div>
+    <main class="chat-container">
+        <div class="chatbox">
+            <div class="chat-content" id="chatContent">
+                <!-- Meldinger vises her -->
             </div>
-        </main>
+            <div class="chat-input">
+                <input type="text" id="chatMessage" placeholder="Skriv en melding..." />
+                <button onclick="sendMessage()">&uarr;</button>
+            </div>
+        </div>
+    </main>
     <script src="chatbox.js"></script>
-    </body>
-    </html>
-
-
 </body>
 </html>
