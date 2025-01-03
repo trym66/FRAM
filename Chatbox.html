@@ -7,8 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRAM Home Delivery Service For Local Food</title>
-    <link rel="stylesheet" href="Chatbox.css">
-    <script src="Chatbox.js"></script>
+    <link rel="stylesheet" href="/CSS/Chatbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
@@ -33,24 +32,18 @@
             </nav>
         </header>
 
-<main class="chat-container">
-        <div class="chatbox">
-            <div class="chat-header">
-                <h2>Chat</h2>
+        <main class="chat-container">
+            <div class="chatbox">
+                
+                <div class="chat-content" id="chatContent">
+                    <!-- Meldinger vises her -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chatMessage" placeholder="Skriv en melding..." />
+                    <button onclick="sendMessage()">&uarr;</button>
+                </div>
             </div>
-            <div class="chat-content" id="chatContent">
-                <!-- Meldinger vil vises her -->
-            </div>
-            <div class="chat-input">
-                <input type="text" id="chatMessage" placeholder="Skriv en melding..." />
-                <button onclick="sendMessage()">&uarr;</button>
-            </div>
-        </div>
-       
-
-
-
-    </main>
+        </main>
     <script src="chatbox.js"></script>
     </body>
     </html>

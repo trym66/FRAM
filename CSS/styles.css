@@ -511,6 +511,7 @@ Popular Produce
 
     form input::placeholder{
         padding-left: 10px;
+        text-indent: 10px;
     }
     
   }
