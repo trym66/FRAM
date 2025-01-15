@@ -101,9 +101,10 @@ body{
 }
 
 .card{
-    width: 45%;
+    width: auto;
     text-align: center;
     padding: 20px;
+    margin: auto;
 }
 
 .card h2 {
@@ -144,7 +145,7 @@ body{
 }
 
 .card button{
-    width: 320px;
+    width: 50%;
     height: 45px;
     background-color: #DC4131;
     color: white;
@@ -200,7 +201,7 @@ KALONNE REKKE MED INFO
 
  .right-column{
     display: flex;
-    flex: 1;    /* vet ikke om jeg trenger denne */
+    flex: 1;    
     flex-grow: 1;
     flex-direction: column;
     gap: 20px;
@@ -226,7 +227,7 @@ KALONNE REKKE MED INFO
 
 .column{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
     border-bottom: 1px solid;
@@ -239,7 +240,6 @@ KALONNE REKKE MED INFO
     width: 35%;
     display: flex;
     margin-right: 180px;
-
 }
 
 .column h3{
@@ -589,7 +589,7 @@ Popular Produce
     }
 
     .popular-produce-image-grid .add-to-cart {
-        position: absolute; /* Fortsatt absolutt posisjonering */
+        position: absolute;
         left: 10%;
         bottom: 8.75em;
         width: 9.5em;
@@ -603,7 +603,7 @@ Popular Produce
 
 
     .popular-produce-image-grid figure {
-        position: relative; /* Sørger for at knappen kan plasseres relativt til figuren */
+        position: relative; 
         
     }
 

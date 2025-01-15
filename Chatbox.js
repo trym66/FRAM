@@ -7,16 +7,16 @@ function openNav() {
   }
 
 
-// Henter HTML-elementene basert på de riktige ID-ene og klassene
-const chatContent = document.getElementById("chatContent"); // Der meldingene vises
-const chatMessage = document.getElementById("chatMessage"); // Inputfeltet for brukerens melding
+
+const chatContent = document.getElementById("chatContent"); 
+const chatMessage = document.getElementById("chatMessage"); 
 
 // Funksjon for å sende melding
 function sendMessage() {
-    const message = chatMessage.value.trim(); // Henter og fjerner unødvendige mellomrom fra meldingen
+    const message = chatMessage.value.trim(); 
     if (message !== "") {
-        appendMessage("You: " + message);  // Legger til brukerens melding i chatboksen
-        chatMessage.value = "";  // Tømmer input-feltet
+        appendMessage("You: " + message);  
+        chatMessage.value = "";  // 
 
         // Sender POST-forespørsel til serveren
         fetch("http://localhost:3000/chat", {
@@ -28,8 +28,8 @@ function sendMessage() {
         })
         .then(response => response.json())
         .then(data => {
-            const botReply = data.choices[0].message.content;  // Få svar fra API
-            appendMessage("GPT: " + botReply);  // Legger til GPT sitt svar i chatboksen
+            const botReply = data.choices[0].message.content; 
+            appendMessage("GPT: " + botReply);  
         })
         .catch(error => {
             console.error("Feil:", error);
@@ -38,10 +38,10 @@ function sendMessage() {
     }
 }
 
-// Funksjon for å legge til meldinger i chatboksen
+
 function appendMessage(message) {
     const messageElement = document.createElement("p");
     messageElement.textContent = message;
-    chatContent.appendChild(messageElement);  // Legger til meldingen i chatboksens innhold
-    chatContent.scrollTop = chatContent.scrollHeight;  // Ruller ned for å vise nyeste melding
+    chatContent.appendChild(messageElement);  
+    chatContent.scrollTop = chatContent.scrollHeight;  
 }
